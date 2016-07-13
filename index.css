@@ -16,15 +16,15 @@ comic {
 
 comic-name{
   display:block;
+  margin-top: 200px;
+  z-index: 2;
+  position: absolute;
   font-family: Marvel;
   font-size: 28px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
   line-height: 20px;
-  position: absolute;
-  margin-top: 200px;
-  z-index: 2;
   text-shadow: 1.5px 2.2px black;
   color: hotpink;
   width: 300px;
@@ -43,7 +43,6 @@ img {
 /* overflow: hidden;*/
   }
 
-
 img:hover {
   border-radius: 50%;
   transform: rotate(360deg);
@@ -54,7 +53,6 @@ img:hover {
   -webkit-filter: grayscale(90%);
 /*    position: absolute;
     z-index: 4;*/
-
 }
 
 /* unvisited link */

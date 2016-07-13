@@ -28,7 +28,6 @@ var marvel = marvelFactory({
   version: '1'
 });
 
-
 // Since we have these I added them below to your code where necessary. There were also some missing ; and some other changes I made that popped up in my linter.
 function $(selector) {
   return document.querySelector(selector);
@@ -47,7 +46,6 @@ $.setAttribute = function (el, attr, value) {
 };
 
 // Make a call using the api
-
 
 marvel('/characters/1009266/comics').then(function(json) {
   json.data.results.map(function(comics){
@@ -79,14 +77,10 @@ marvel('/characters/1009266/comics').then(function(json) {
     setTimeout(function(){alert("X-men and Avengers are 2 of Marvel's most successful franchises!");},2000);
  });
 
-
     // Add the character tag to the overall list of characters
     var container = document.querySelector('comics'); // <characters><character><character-name>3D-Man</character-name><img src="..." /></character></characters>
     container.appendChild(comicContainer);
-
-
   });
-
 });
 
 // (function(index, innerHTML) {
